@@ -19,7 +19,8 @@ const tpl = hbs.compile(
  * Determines where to write the generated XML.
  * During development it will write data to a temporary directory.
  */
-const filesDir = resolve(isProduction ? '/home/ftp-user/' : tmpdir(), 'transactions/')
+// const filesDir = resolve(isProduction ? '/home/ftp-user/' : tmpdir(), 'transactions/')
+const filesDir = resolve(isProduction ? '/var/www/html/' : tmpdir(), 'transactions/')
 
 // Write initial set of files
 doWrite()
