@@ -31,7 +31,7 @@ function doWrite () {
     mkdirSync(filesDir)
   }
 
-  if (readdirSync(filesDir).length >= 20) {
+  if (readdirSync(filesDir).length >= 87) {
     log('skipping data generation since existing files have yet to be processed')
   } else {
     for (let i = 0; i < Math.round(Math.random() * 2); i++) {
