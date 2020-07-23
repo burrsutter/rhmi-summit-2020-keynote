@@ -51,5 +51,6 @@ function doWrite () {
   }
 
   // Queue the next write in ~3 seconds
-  setTimeout(doWrite, 3000)
+  // setTimeout(doWrite, 3000)
+  setTimeout(doWrite, 500)
 }
